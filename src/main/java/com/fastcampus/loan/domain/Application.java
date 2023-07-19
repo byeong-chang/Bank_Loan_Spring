@@ -27,7 +27,7 @@ public class Application extends BaseEntity{
     @Column(columnDefinition = "varchar(12) DEFAULT NULL COMMENT '신청자'")
     private String name;
 
-    @Column(columnDefinition = "varchar(12) DEFAULT NULL COMMENT '전화번호'" )
+    @Column(columnDefinition = "varchar(50) DEFAULT NULL COMMENT '전화번호'" )
     private String cellPhone;
 
     @Column(columnDefinition =  "varchar(50) DEFAULT NULL COMMENT '신청자 이메일'")
