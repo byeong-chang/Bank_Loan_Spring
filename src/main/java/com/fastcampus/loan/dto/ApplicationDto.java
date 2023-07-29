@@ -1,10 +1,7 @@
 package com.fastcampus.loan.dto;
 
 import ch.qos.logback.classic.pattern.LineOfCallerConverter;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -15,6 +12,7 @@ public class ApplicationDto implements Serializable {
     @NoArgsConstructor
     @AllArgsConstructor
     @Builder
+    @Setter
     @Getter
     public static class Request{
 
@@ -32,6 +30,7 @@ public class ApplicationDto implements Serializable {
     @AllArgsConstructor
     @Builder
     @Getter
+    @Setter
     public static class Response{
 
         private Long applicationId;
@@ -44,7 +43,7 @@ public class ApplicationDto implements Serializable {
 
         private BigDecimal hopeAmount;
 
-        private LocalDateTime createAt;
+        private LocalDateTime createdAt;
 
         private LocalDateTime updatedAt;
     }
