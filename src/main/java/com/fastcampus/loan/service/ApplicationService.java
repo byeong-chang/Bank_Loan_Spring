@@ -8,5 +8,6 @@ public interface ApplicationService {
     Response create(ApplicationDto.Request request);
     Response get(Long applicationId);
     Response update(Long applicationId, ApplicationDto.Request request);
+    void delete(Long applicationId);
 
 }
